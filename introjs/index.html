@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+  </head>
+  <body>
+    <script>
+      // function add7(num) {
+      //   return num + 7
+      // }
+      // console.log(add7(2))
+      // function multiply(num, num2) {
+      //   return num * num2
+      // }
+      // console.log(multiply(5, 5))
+      // function capitalize(str) {
+      //   return str[0].toUpperCase() + str.slice(1)
+      // }
+      // console.log(capitalize('droptop'))
+      // function lastLetter(str) {
+      //   return str[str.length - 1]
+      // }
+      // console.log(lastLetter('abcdefghijk'))
+
+      function fizzbuzz() {
+        const answer = parseInt(prompt("Please enter a number"));
+        for ( let i = 1; i <= answer; i++ ) {
+          if ( i % 5 === 0 && i % 3 === 0 ) {
+            console.log('fizzbuzz')
+          }
+          else if ( i % 5 === 0)  {
+            if ( i % 3 !== 0 ) console.log('buzz')
+          }
+          else if ( i % 3 === 0 ) {
+            if ( i % 5 !== 0 ) console.log('fizz')
+          } else console.log(i)
+        }
+      }
+
+      fizzbuzz();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
